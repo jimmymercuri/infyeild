@@ -9516,7 +9516,7 @@ addcmd("dance", {}, function(args, speaker)
 	pcall(execCmd, "undance")
 	local dances = {"27789359", "30196114", "248263260", "45834924", "33796059", "28488254", "52155728"}
 	if r15(speaker) then
-		dances = {"3333432454", "4555808220", "4049037604", "4555782893", "10214311282", "10714010337", "10713981723", "10714372526", "10714076981", "10714392151", "11444443576"}
+		dances = {"10214311282"}
 	end
 	local animation = Instance.new("Animation")
 	animation.AnimationId = "rbxassetid://" .. dances[math.random(1, #dances)]
