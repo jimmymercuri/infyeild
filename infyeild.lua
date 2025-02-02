@@ -7000,8 +7000,19 @@ function glassTest()
 
         local track = animator:LoadAnimation(animation)
         track:Play()
+
+        -- Wait for half of the animation duration
+        task.wait(track.Length / 2)
+
+        -- Pause the animation
+        track:AdjustSpeed(0)
+        task.wait(2) -- Wait for 2 seconds
+
+        -- Resume the animation
+        track:AdjustSpeed(1)
     end
 end
+
 
 
 function NOFLY()
