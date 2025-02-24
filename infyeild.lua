@@ -4389,6 +4389,7 @@ CMDs[#CMDs + 1] = {NAME = 'vehiclenoclip / vnoclip', DESC = 'Turns off vehicle c
 CMDs[#CMDs + 1] = {NAME = 'vehicleclip / vclip / unvnoclip', DESC = 'Enables vehicle collision'}
 CMDs[#CMDs + 1] = {NAME = 'float /  platform', DESC = 'Spawns a platform beneath you causing you to float'}
 CMDs[#CMDs + 1] = {NAME = 'glasstest', DESC = 'Fake tests the glass bridge in shrimp game'}
+CMDs[#CMDs + 1] = {NAME = 'BasketBallLegends / BBL ', DESC = 'Everything you need to be insane at Basketball ledgends!'}
 CMDs[#CMDs + 1] = {NAME = 'unfloat / noplatform', DESC = 'Removes the platform'}
 CMDs[#CMDs + 1] = {NAME = 'swim', DESC = 'Allows you to swim in the air'}
 CMDs[#CMDs + 1] = {NAME = 'unswim / noswim', DESC = 'Stops you from swimming everywhere'}
@@ -7137,6 +7138,13 @@ addcmd('glasstest', {'Tester'}, function(args, speaker)
     else
         rconsolewarn("glassTest function not found!")
     end
+end)
+
+addcmd('BBL', {'BasketBallLegends'}, function(args, speaker)
+	notify('Loading', 'Hold on a sec')
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/jimmymercuri/BBLAnimations/refs/heads/main/Animations"))()
+	wait(0.2)
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/vnausea/absence-mini/refs/heads/main/absencemini.lua"))()
 end)
 
 
