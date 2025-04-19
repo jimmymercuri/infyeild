@@ -1,3 +1,4 @@
+-- loadstring(game:HttpGet("https://raw.githubusercontent.com/jimmymercuri/infyeild/refs/heads/main/infyeild.lua"))()
 local player = game.Players.LocalPlayer
 local character = player.Character or player.CharacterAdded:Wait()
 local userInputService = game:GetService("UserInputService")
